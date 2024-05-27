@@ -1,0 +1,92 @@
+:root {
+    --bg-color: #121212;
+    --container-bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --hover-color: #3700b3;
+    --input-bg-color: #333333;
+    --placeholder-color: #aaaaaa;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px var(--box-shadow-color);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+#notas, #media {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#notas p, #media p {
+    margin: 0;
+}
+
+li{
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background-color 0.4s;
+}
